@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-travel"
+version = "0.1.0"
+description = ""
+authors = ["YVVV19 <vadimyankovskiy2000@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_travel", from = "src"}]
+
+[tool.poetry.scripts]
+start = "flask_travel:run"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quart = "^0.19.8"
+sqlalchemy = "^2.0.36"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

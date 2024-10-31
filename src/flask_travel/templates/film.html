@@ -1,0 +1,11 @@
+<main>
+    {% for film in films %}
+        <article>
+        <h2><a href="{{url_for('film_details',index=film.id)}}">{{ film.desc }}</a></h2>
+        <p>{{ film.desc|safe }}</p>
+        <a href="{{url_for('delete_films', index=film.id)}}">Reserve</a>
+        </article>
+    {% else %}
+        <p>No films available</p>
+    {% endfor %}
+</main>

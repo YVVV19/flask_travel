@@ -1,0 +1,18 @@
+<form method="POST" style="display: flex; flex-direction: column; gap: 8px; max-width:400px">
+    <div class="form-floating">
+        <textarea class="form-control" name="title" placeholder="Leave a comment here" 
+        id="title_texarea">{{title}}</textarea>
+        <label for="title_texarea">Title</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" name="content" placeholder="place a content here" 
+        id="content_textarea" style="height: 100px">{{desc}}</textarea>
+        <label for="content_textarea">Description</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" name="content" placeholder="place a content here" 
+        id="content_textarea" style="height: 100px">{{price}}</textarea>
+        <label for="content_textarea">Price</label>
+    </div>
+    <button type="submit">Create</button>
+</form>
